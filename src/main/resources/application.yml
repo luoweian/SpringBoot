@@ -1,0 +1,13 @@
+spring:
+  profiles:
+    active: prod
+
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/dbgirl
+    password: root
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update  #create创建一个空表
+      show-sql: true
